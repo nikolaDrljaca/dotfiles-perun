@@ -48,8 +48,6 @@ cat /sys/class/power_supply/BAT1/current_now /sys/class/power_supply/BAT1/voltag
 export PATH="$PATH:/home/nikola/.local/bin"
 # Local scripts
 export PATH="$PATH:$HOME/.local/scripts/"
-# JetBrains Toolbox
-export PATH="$PATH:/home/nikola/.local/share/JetBrains/Toolbox/apps"
 
 # tmux project picker
 bind '"\C-f":"tmux-sessionizer\n"'
