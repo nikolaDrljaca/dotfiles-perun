@@ -41,7 +41,7 @@ alias l='ls -CF'
 
 # CUSTOM
 power() {
-cat /sys/class/power_supply/BAT1/current_now /sys/class/power_supply/BAT1/voltage_now | xargs | awk '{print $1*$2/1e12 " W"}'
+    cat /sys/class/power_supply/BAT1/current_now /sys/class/power_supply/BAT1/voltage_now | xargs | awk '{print $1*$2/1e12 " W"}'
 }
 
 # Local binaries
@@ -52,7 +52,7 @@ export PATH="$PATH:$HOME/.local/scripts/"
 # tmux project picker
 bind '"\C-f":"tmux-sessionizer\n"'
 
-eval "$(oh-my-posh init bash --config /home/nikola/.poshthemes/huvix-2.omp.json)"
+eval "$(oh-my-posh init bash --config /home/nikola/.poshthemes/kanagawa-wave.omp.json)"
 
 # 
 export TERM=xterm-256color
